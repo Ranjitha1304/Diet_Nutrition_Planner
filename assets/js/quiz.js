@@ -36,17 +36,17 @@ const foodGroups = [
       </div>
       <div id="fruits-options" class="food-group-options">
         <div class="food-option" onclick="toggleSelection(this, true, '#fruits-options .food-option')">
-          <img src="./images/fruit group icon-quiz.png" alt="Fruits" />
+          <img src="./assets/images/fruit group icon-quiz.png" alt="Fruits" />
           <div class="food-label">Never / Rarely</div>
           <div class="food-frequency">0–2 days per week</div>
         </div>
         <div class="food-option" onclick="toggleSelection(this, true, '#fruits-options .food-option')">
-          <img src="./images/fruit group icon-quiz.png" alt="Fruits" />
+          <img src="../images/fruit group icon-quiz.png" alt="Fruits" />
           <div class="food-label">Occasionally</div>
           <div class="food-frequency">3–4 days per week</div>
         </div>
         <div class="food-option" onclick="toggleSelection(this, true, '#fruits-options .food-option')">
-          <img src="../images/fruit group icon-quiz.png" alt="Fruits" />
+          <img src="/images/fruit group icon-quiz.png" alt="Fruits" />
           <div class="food-label">Often / Always</div>
           <div class="food-frequency">5–7 days per week</div>
         </div>
