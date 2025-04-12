@@ -36,17 +36,17 @@ const foodGroups = [
       </div>
       <div id="fruits-options" class="food-group-options">
         <div class="food-option" onclick="toggleSelection(this, true, '#fruits-options .food-option')">
-          <img src="./assets/images/fruit group icon-quiz.png" alt="Fruits" />
+          <img src="../images/fruit group icon-quiz.png" alt="Fruits" />
           <div class="food-label">Never / Rarely</div>
           <div class="food-frequency">0–2 days per week</div>
         </div>
         <div class="food-option" onclick="toggleSelection(this, true, '#fruits-options .food-option')">
-          <img src="./assets/images/fruit group icon-quiz.png" alt="Fruits" />
+          <img src="../images/fruit group icon-quiz.png" alt="Fruits" />
           <div class="food-label">Occasionally</div>
           <div class="food-frequency">3–4 days per week</div>
         </div>
         <div class="food-option" onclick="toggleSelection(this, true, '#fruits-options .food-option')">
-          <img src="./assets/images/fruit group icon-quiz.png" alt="Fruits" />
+          <img src="../images/fruit group icon-quiz.png" alt="Fruits" />
           <div class="food-label">Often / Always</div>
           <div class="food-frequency">5–7 days per week</div>
         </div>
@@ -61,17 +61,17 @@ const foodGroups = [
       </div>
       <div id="vegetables-options" class="food-group-options">
         <div class="food-option" onclick="toggleSelection(this, true, '#vegetables-options .food-option')">
-          <img src="./assets/images/vegetable icon quiz.png" alt="Vegetables" />
+          <img src="../images/vegetable icon quiz.png" alt="Vegetables" />
           <div class="food-label">Never / Rarely</div>
           <div class="food-frequency">0–2 days per week</div>
         </div>
         <div class="food-option" onclick="toggleSelection(this, true, '#vegetables-options .food-option')">
-          <img src="./assets/images/vegetable icon quiz.png" alt="Vegetables" />
+          <img src="../images/vegetable icon quiz.png" alt="Vegetables" />
           <div class="food-label">Occasionally</div>
           <div class="food-frequency">3–4 days per week</div>
         </div>
         <div class="food-option" onclick="toggleSelection(this, true, '#vegetables-options .food-option')">
-          <img src="./assets/images/vegetable icon quiz.png" alt="Vegetables" />
+          <img src="../images/vegetable icon quiz.png" alt="Vegetables" />
           <div class="food-label">Often / Always</div>
           <div class="food-frequency">5–7 days per week</div>
         </div>
@@ -86,17 +86,17 @@ const foodGroups = [
       </div>
       <div id="grains-options" class="food-group-options">
         <div class="food-option" onclick="toggleSelection(this, true, '#grains-options .food-option')">
-          <img src="./assets/images/grain icon quiz.png" alt="Grains" />
+          <img src="../images/grain icon quiz.png" alt="Grains" />
           <div class="food-label">Never / Rarely</div>
           <div class="food-frequency">0–2 days per week</div>
         </div>
         <div class="food-option" onclick="toggleSelection(this, true, '#grains-options .food-option')">
-          <img src="./assets/images/grain icon quiz.png" alt="Grains" />
+          <img src="../images/grain icon quiz.png" alt="Grains" />
           <div class="food-label">Occasionally</div>
           <div class="food-frequency">3–4 days per week</div>
         </div>
         <div class="food-option" onclick="toggleSelection(this, true, '#grains-options .food-option')">
-          <img src="./assets/images/grain icon quiz.png" alt="Grains" />
+          <img src="../images/grain icon quiz.png" alt="Grains" />
           <div class="food-label">Often / Always</div>
           <div class="food-frequency">5–7 days per week</div>
         </div>
@@ -111,17 +111,17 @@ const foodGroups = [
       </div>
       <div id="protein-options" class="food-group-options">
         <div class="food-option" onclick="toggleSelection(this, true, '#protein-options .food-option')">
-          <img src="./assets/images/protein icon quiz.png" alt="Protein" />
+          <img src="../images/protein icon quiz.png" alt="Protein" />
           <div class="food-label">Never / Rarely</div>
           <div class="food-frequency">0–2 days per week</div>
         </div>
         <div class="food-option" onclick="toggleSelection(this, true, '#protein-options .food-option')">
-          <img src="./assets/images/protein icon quiz.png" alt="Protein" />
+          <img src="../images/protein icon quiz.png" alt="Protein" />
           <div class="food-label">Occasionally</div>
           <div class="food-frequency">3–4 days per week</div>
         </div>
         <div class="food-option" onclick="toggleSelection(this, true, '#protein-options .food-option')">
-          <img src="./assets/images/protein icon quiz.png" alt="Protein" />
+          <img src="../images/protein icon quiz.png" alt="Protein" />
           <div class="food-label">Often / Always</div>
           <div class="food-frequency">5–7 days per week</div>
         </div>
@@ -136,17 +136,17 @@ const foodGroups = [
       </div>
       <div id="dairy-options" class="food-group-options">
         <div class="food-option" onclick="toggleSelection(this, true, '#dairy-options .food-option')">
-          <img src="./assets/images/diary icon-quiz.png" alt="Dairy" />
+          <img src="../images/diary icon-quiz.png" alt="Dairy" />
           <div class="food-label">Never / Rarely</div>
           <div class="food-frequency">0–2 days per week</div>
         </div>
         <div class="food-option" onclick="toggleSelection(this, true, '#dairy-options .food-option')">
-          <img src="./assets/images/diary icon-quiz.png" alt="Dairy" />
+          <img src="../images/diary icon-quiz.png" alt="Dairy" />
           <div class="food-label">Occasionally</div>
           <div class="food-frequency">3–4 days per week</div>
         </div>
         <div class="food-option" onclick="toggleSelection(this, true, '#dairy-options .food-option')">
-          <img src="./assets/images/diary icon-quiz.png" alt="Dairy" />
+          <img src="../images/diary icon-quiz.png" alt="Dairy" />
           <div class="food-label">Often / Always</div>
           <div class="food-frequency">5–7 days per week</div>
         </div>
