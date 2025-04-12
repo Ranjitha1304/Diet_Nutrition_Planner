@@ -1,0 +1,418 @@
+
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+header{
+    background-color: #eeffe5;
+    padding:1px;
+    text-align: center;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+  .logo {
+    font-family: 'Inknut Antiqua', serif;
+    color: #2E8756;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    padding-left: 5rem;
+  }
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.8rem;
+    padding-right: 4rem;
+  }
+  .nav-links li a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight:700;
+  }
+  .nav-links li a:hover {
+    color: #2E8756; 
+    text-decoration: underline;
+    text-underline-offset: 8px;
+
+  }
+  .nav-links li a.active-link {
+    color: #2E8756;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+  }
+  
+/* Default: hide toggle button on large screens */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #2E7D32;
+  cursor: pointer;
+}
+
+
+  .blog-section {
+    padding: 40px;
+    padding-top: 0px;
+    padding-right: 0;
+    text-align: center;
+    width:80%;
+    margin:auto;
+  }
+  
+  .blog-heading {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 60px;
+  }
+  
+  .blog-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 45px;
+  }
+  
+  .blog-card {
+    width: 45%; /* 2 per row */
+    max-width: 500px;
+    text-align: left;
+  }
+  
+  .blog-card img {
+    width: 90%;
+  }
+  
+  .blog-date {
+    font-size: 22px;
+    color: rgb(43, 42, 42);
+  }
+  
+  .blog-title {
+    /* font-size: 1.3rem; */
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1.1;
+  }
+  .blog-description {
+    /* font-size: 0.95rem; */
+    font-size: 18px;
+    font-weight: 500;
+    color: #222121;
+    line-height: 1.1;
+  }
+  h3.blog-title {
+    margin-bottom: 0;
+    margin-top: 5px;
+  }
+  p.blog-description {
+    margin-top: 15px;
+
+  }
+
+  .featIconContainer{
+    width:80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap:40px;
+    justify-content: center;
+  }
+  
+  .featIconContainer img{
+    padding-right: 60px;
+  }
+  
+  .featIconContainer img {
+    height: 80px; 
+    width: auto;
+  }
+  
+  .featIconContainer img:nth-child(1) {
+    width:150px;
+    height: 50px;
+  }
+  .featIconContainer img:nth-child(2) {
+    width:140px;
+    height: 40px;
+   }
+  .featIconContainer img:nth-child(3) {
+    width:150px;
+    height: auto;
+  }
+  .featIconContainer img:nth-child(4) {
+    width:150px;
+    height: 50px;
+  }
+  .featIconContainer img:nth-child(5) {
+    height: 110px;
+  }
+
+
+  .featIconContainer img:nth-child(7) {
+    height: 85px;
+  }
+  
+  .featuredContainer{
+    margin-top: 70px;
+    margin-bottom: 50px;
+  }
+  .featHeading h1 {
+    text-align: center;
+    padding-bottom: 30px;
+    font-weight: bolder;
+  }
+  
+
+/* Footer Styling */
+footer {
+  display:flex;
+  width:80%;
+  margin:auto;
+  margin-top: 50px;
+justify-content: space-between;
+}
+
+.column {
+  max-width: 450px;
+  
+}
+
+p.columnContent{
+font-size: 16px;
+font-weight: 500;
+}
+
+.column a {
+  text-decoration: none;
+  color: black;
+}
+.footerMedia{
+  display:flex;
+  width:80%;
+  margin:auto;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  justify-content: space-between;
+}
+.leftContent span {
+  font-size: 18px;
+  font-weight: 300;
+  padding-left: 10px;
+}
+
+.rightContent img {
+width:250px;
+}
+.leftContent img {
+width:20px;
+height:20px;
+margin-top: 10px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .navbar {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .logo {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+    padding-right: 0;
+    align-items: center;
+    display: none;
+    background-color: #fff;
+    width: 100%;
+    padding: 1rem;
+    border-top: 1px solid #ccc;
+    z-index: 1000;
+
+  }
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    top: 2.8rem;
+    right: 0.5rem;
+  }
+  .nav-links li a {
+    font-size: 1rem;
+}
+.nav-links.show {
+  display: flex;
+}
+
+  .blog-section {
+    padding: 0px 10px;
+    width: 100%;
+  }
+  .blog-heading {
+    margin-bottom: 20px;
+}
+h2.blog-heading {
+  margin-top: 0;
+}
+  .blog-card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .blog-card img {
+    width: 100%;
+  }
+  .blog-date {
+    font-size: 17px;
+}
+  .blog-title {
+    font-size: 17px;
+}
+.blog-description {
+  font-size: 13px;
+}
+.featHeading h1 {
+  padding-bottom: 10px;
+}
+.featIconContainer {
+  gap: 8px;
+  margin-left: 62px;
+}
+.featuredContainer {
+   margin-bottom: 10px; 
+   margin-top: 0px;
+
+}
+
+
+  /* .featIconContainer {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .featIconContainer img {
+    padding-right: 0;
+  } */
+
+  footer {
+    flex-direction: column;
+    gap: 0px;
+    width: 90%;
+    align-items: flex-start;
+    margin-top: 0;
+  }
+
+  .footerMedia {
+    flex-direction: column;
+    gap: 20px;
+    width: 90%;
+    align-items: flex-start;
+  }
+  .leftContent span {
+    font-size: 16px;
+}
+  .rightContent img {
+    width: 200px;
+  }
+
+  .leftContent img {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .logo {
+    font-size: 14px;
+    padding-left: 0;
+}
+  .navbar {
+    flex-direction: row;
+    padding: 1rem;
+  }
+
+  .nav-links {
+    gap: 1rem;
+    padding-right: 2rem;
+  }
+  .nav-links li a {
+    font-size: 1rem;
+}
+.blog-section {
+  width: 94%;
+}
+  .blog-card {
+    width: 48%;
+  }
+  .blog-container {
+    gap: 24px;
+}
+.blog-heading {
+  margin-bottom: 32px;
+}
+.blog-title {
+  font-size: 19px;
+}
+.blog-description {
+  font-size: 14px;
+}
+  .featIconContainer {
+    gap: 30px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .featuredContainer {
+    margin-top: 0px;
+}
+  footer, .footerMedia {
+    width: 90%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .rightContent img {
+    width: 220px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1300px) {
+  .navbar {
+    padding: 1rem;
+  }
+
+  .logo {
+    padding-left: 3rem;
+    font-size: 1.1rem;
+  }
+
+  .nav-links {
+    gap: 1.5rem;
+    padding-right: 3rem;
+  }
+
+  .blog-card {
+    width: 47%;
+  }
+
+  .featIconContainer {
+    gap: 35px;
+    justify-content: space-evenly;
+  }
+
+  footer, .footerMedia {
+    width: 90%;
+  }
+
+  .rightContent img {
+    width: 240px;
+  }
+}

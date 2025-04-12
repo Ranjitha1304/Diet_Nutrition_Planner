@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Payment</title>
+  <link rel="stylesheet" href="./assets/css/challenge.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@700&family=Raleway:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <h5>ONE STOP FOR NUTRITION PLAN AND PERSONALIZED DIET CHART!!!</h5>
+  </header>
+
+  <nav class="navbar">
+    <div class="logo">EAT HEALTHY +</div>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="./index.html" class="active-link">Home</a></li>
+      <li><a href="./eatHealthy.html">Eat Healthy</a></li>
+      <li><a href="./resources.html">Resources</a></li>
+      <li><a href="./mealPlan.html">Meal Plan</a></li>
+    </ul>
+  </nav>
+
+  <section class="challenge-section">
+    <div class="banner-wrapper">
+      <img src="./assets/images/30 day challenge.png" alt="Banner Image" class="banner-img">
+    </div>
+
+    <div class="challenge-container over-banner">
+      <div class="flexing">
+        <div>
+          <h2>MY 30 DAY</h2>
+          <h1>CHALLENGE</h1>
+        </div>
+        <div class="date-box">
+          <p>Start date:</p>
+          <p>End date:</p>
+        </div>
+      </div>
+      <div class="challenge-box">
+        <div class="item"><span class="num">01</span> <span class="desc">Handful of <strong>FRUITS</strong></span></div>
+        <div class="item"><span class="num">02</span> <span class="desc">Palm size <strong>PROTEIN</strong></span></div>
+        <div class="item"><span class="num">03</span> <span class="desc">2 Cups of <strong>VEGETABLES</strong></span>
+        </div>
+        <div class="item"><span class="num">04</span> <span class="desc">Whole Food <strong>GRAINS</strong></span></div>
+        <div class="item"><span class="num">05</span> <span class="desc">1 Glass of <strong>MILK</strong></span></div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <div class="container">
+    <div>
+      <h2>Sunday</h2>
+      <div class="day-card">
+        <div><span class="section-title">BREAKFAST</span><br><p class="meal-name">Overnight Oats + Berries<br>Egg Cups</p></div>
+        <br>
+        <div><span class="section-title">LUNCH</span><br><p class="meal-name">Meat, Fish, Lentils<br>Whole Grains<br>Saute Veggies</p></div>
+        <br>
+        <div><span class="section-title">SNACK</span><br><p class="meal-name">Hummus + Veggies<br>Mixed Nuts</p></div>
+        <br>
+        <div><span class="section-title">DINNER</span><br><p class="meal-name">Vegetables + Protein in soup<br>Lentil curry + Rice</p></div>
+      </div>
+    </div>
+
+    <!-- Duplicate for each day -->
+    <div>
+      <h2>Monday</h2>
+      <div class="day-card">
+        <div><span class="section-title">BREAKFAST</span><br><p class="meal-name">Overnight Oats + Berries<br>Egg Cups</p></div>
+        <br>
+        <div><span class="section-title">LUNCH</span><br><p class="meal-name">Meat, Fish, Lentils<br>Whole Grains<br>Saute Veggies</p></div>
+        <br>
+        <div><span class="section-title">SNACK</span><br><p class="meal-name">Hummus + Veggies<br>Mixed Nuts</p></div>
+        <br>
+        <div><span class="section-title">DINNER</span><br><p class="meal-name">Vegetables + Protein in soup<br>Lentil curry + Rice</p></div>
+      </div>
+    </div>
+
+    <div>
+      <h2>Tuesday</h2>
+      <div class="day-card">
+        <div><span class="section-title">BREAKFAST</span><br><p class="meal-name">Overnight Oats + Berries<br>Egg Cups</p></div>
+        <br>
+        <div><span class="section-title">LUNCH</span><br><p class="meal-name">Meat, Fish, Lentils<br>Whole Grains<br>Saute Veggies</p></div>
+        <br>
+        <div><span class="section-title">SNACK</span><br><p class="meal-name">Hummus + Veggies<br>Mixed Nuts</p></div>
+        <br>
+        <div><span class="section-title">DINNER</span><br><p class="meal-name">Vegetables + Protein in soup<br>Lentil curry + Rice</p></div>
+      </div>
+    </div>
+
+    <div>
+      <h2>Wednesday</h2>
+      <div class="day-card">
+        <div><span class="section-title">BREAKFAST</span><br><p class="meal-name">Overnight Oats + Berries<br>Egg Cups</p></div>
+        <br>
+        <div><span class="section-title">LUNCH</span><br><p class="meal-name">Meat, Fish, Lentils<br>Whole Grains<br>Saute Veggies</p></div>
+        <br>
+        <div><span class="section-title">SNACK</span><br><p class="meal-name">Hummus + Veggies<br>Mixed Nuts</p></div>
+        <br>
+        <div><span class="section-title">DINNER</span><br><p class="meal-name">Vegetables + Protein in soup<br>Lentil curry + Rice</p></div>
+      </div>
+    </div>
+
+    <div>
+      <h2>Thursday</h2>
+      <div class="day-card">
+        <div><span class="section-title">BREAKFAST</span><br><p class="meal-name">Overnight Oats + Berries<br>Egg Cups</p></div>
+        <br>
+        <div><span class="section-title">LUNCH</span><br><p class="meal-name">Meat, Fish, Lentils<br>Whole Grains<br>Saute Veggies</p></div>
+        <br>
+        <div><span class="section-title">SNACK</span><br><p class="meal-name">Hummus + Veggies<br>Mixed Nuts</p></div>
+        <br>
+        <div><span class="section-title">DINNER</span><br><p class="meal-name">Vegetables + Protein in soup<br>Lentil curry + Rice</p></div>
+      </div>
+    </div>
+
+    <div>
+      <h2>Friday</h2>
+      <div class="day-card">
+        <div><span class="section-title">BREAKFAST</span><br><p class="meal-name">Overnight Oats + Berries<br>Egg Cups</p></div>
+        <br>
+        <div><span class="section-title">LUNCH</span><br><p class="meal-name">Meat, Fish, Lentils<br>Whole Grains<br>Saute Veggies</p></div>
+        <br>
+        <div><span class="section-title">SNACK</span><br><p class="meal-name">Hummus + Veggies<br>Mixed Nuts</p></div>
+        <br>
+        <div><span class="section-title">DINNER</span><br><p class="meal-name">Vegetables + Protein in soup<br>Lentil curry + Rice</p></div>
+      </div>
+    </div>
+
+    <div>
+      <h2>Saturday</h2>
+      <div class="day-card">
+        <div><span class="section-title">BREAKFAST</span><br><p class="meal-name">Overnight Oats + Berries<br>Egg Cups</p></div>
+        <br>
+        <div><span class="section-title">LUNCH</span><br><p class="meal-name">Meat, Fish, Lentils<br>Whole Grains<br>Saute Veggies</p></div>
+        <br>
+        <div><span class="section-title">SNACK</span><br><p class="meal-name">Hummus + Veggies<br>Mixed Nuts</p></div>
+        <br>
+        <div><span class="section-title">DINNER</span><br><p class="meal-name">Vegetables + Protein in soup<br>Lentil curry + Rice</p></div>
+      </div>
+    </div>
+  
+
+  <div class="notes-section">
+    <h2>Notes</h2>
+
+    <div class="notes-info">
+      <div class="legend">
+        <div class="legend-item">
+          <div class="square green"></div> No Sugar
+        </div>
+        <div class="legend-item">
+          <div class="square blue"></div> No solid food - water and juice
+        </div>
+        <div class="legend-item">
+          <div class="square yellow"></div> No food - 12 hours fast
+        </div>
+      </div>
+<div>
+      <div class="days-row">
+        <div>S</div>
+        <div>M</div>
+        <div>T</div>
+        <div>W</div>
+        <div>T</div>
+        <div>F</div>
+        <div>S</div>
+      </div>
+
+      <!-- Weekly colored grid rows -->
+      <div class="grid-row">
+        <div class="square yellow"></div>
+        <div class="square green"></div>
+        <div class="square blue"></div>
+        <div class="square green"></div>
+        <div class="square blue"></div>
+        <div class="square green"></div>
+        <div class="square blue"></div>
+      </div>
+      <div class="grid-row">
+        <div class="square green"></div>
+        <div class="square blue"></div>
+        <div class="square green"></div>
+        <div class="square yellow"></div>
+        <div class="square green"></div>
+        <div class="square blue"></div>
+        <div class="square yellow"></div>
+      </div>
+      <div class="grid-row">
+        <div class="square green"></div>
+        <div class="square blue"></div>
+        <div class="square green"></div>
+        <div class="square yellow"></div>
+        <div class="square green"></div>
+        <div class="square blue"></div>
+        <div class="square yellow"></div>
+      </div>
+      <div class="grid-row">
+        <div class="square green"></div>
+        <div class="square blue"></div>
+        <div class="square green"></div>
+        <div class="square yellow"></div>
+        <div class="square green"></div>
+        <div class="square blue"></div>
+        <div class="square yellow"></div>
+      </div>
+      <div class="grid-row">
+        <div class="square green"></div>
+        <div class="square blue"></div>
+        <div class="square green"></div>
+        <div class="square yellow"></div>
+        <div class="square green"></div>
+        <div class="square blue"></div>
+        <div class="square yellow"></div>
+      </div>
+
+    </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<footer>
+  <div class="column">
+      <h2>EAT HEALTHY +</h2>
+      <p class="columnContent">Eat Healthy + is a comprehensive platform, which gives an essential guide to healthy eating.</p>
+      <h3 style="font-weight: 600;margin-bottom: 5px;"><a href="./terms&Conditions.html">Terms & Conditions</a></h3>
+      <h3 style="font-weight: 600;margin-top: 10px;"><a href="./privacyPolicy.html">Privacy Policy</a></h3>
+  </div>
+  <div class="column">
+      <h2>Quick Links:</h2>
+      <h3 style="font-weight: 500;margin-bottom: 5px;"><a href="./aboutUs.html">About Us</a></h3>
+      <h3 style="font-weight: 500;margin-top: 5px;"><a href="./advertising.html">Advertising Policy</a></h3>
+      <h2>Contact Us:</h2>
+      <p style="margin: 0;">Phone: +91 9876541230</p>
+      <p style="margin: 0;">Email: info@eathealth.com</p>
+  </div>
+  <div class="column">
+      <h3 style="margin-bottom: 7px;font-weight: 600;"><a href="./nutrition.html">Nutrition Guidelines</a></h3>
+      <h3 style="margin: 5px auto;font-weight: 600;"><a href="./news.html">News</a></h3>
+      <h3 style="margin-top: 10px;font-weight: 600;"><a href="./diversity.html">Diversity & Inclusion</a></h3>
+  </div>
+</footer>
+<div class="footerMedia">
+      <div class="leftContent">
+          <img src="./assets/images/Copyright.png">
+          <span>Eat Healthy +. All Right Reserved</span>
+      </div>
+      <div class="rightContent">
+          <img src="./assets/images/social links-footer.png">
+      </div>
+  </div>
+
+
+
+
+
+  <script src="./assets/js/toggle.js"></script>
+</body>
+
+</html>

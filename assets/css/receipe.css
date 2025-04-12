@@ -1,0 +1,374 @@
+body {
+    font-family: 'Raleway', sans-serif;
+  }
+  header{
+      background-color: #eeffe5;
+      padding:1px;
+      text-align: center;
+  }
+  .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+    .logo {
+      font-family: 'Inknut Antiqua', serif;
+      color: #2E8756;
+      font-size: 1.2rem;
+      font-weight: bolder;
+      padding-left: 5rem;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1.8rem;
+      padding-right: 4rem;
+    }
+    .nav-links li a {
+      color: black;
+      text-decoration: none;
+      font-size: 1.3rem;
+      font-weight:700;
+    }
+    .nav-links li a:hover {
+      color: #2E8756; 
+      text-decoration: underline;
+      text-underline-offset: 8px;
+  
+    }
+    .nav-links li a.active-link {
+        color: #2E8756;
+        text-decoration: underline;
+        text-underline-offset: 8px;
+      }
+      
+  
+  /* Default: hide toggle button on large screens */
+  .menu-toggle {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #2E7D32;
+    cursor: pointer;
+  }
+  
+.banner-container {
+    background-color: #ffecd7;
+    max-height: 450px;
+    padding-top: 10px;
+}
+
+.chili-container {
+    width:75%;
+    margin: auto;
+    margin-top: 40px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    padding-left: 60px;
+}
+
+.img-container {
+    width: 65%;  /* Fixed size of your container */
+    height: 300px;
+    margin: auto;
+    margin-left: 150px;
+    margin-top: 90px;
+  }
+  
+  .img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.4); 
+    transform-origin: center center; /* Zoom from the center */
+    border-radius: 10px;
+}
+  
+.content-container {
+    width:80%;
+    margin: auto;
+    margin-top: 150px;
+}
+.content-container p{
+font-size: 29px;
+font-weight: 700;
+}
+li{
+    font-size: 28px;
+    font-weight: 500;
+
+}
+
+
+  
+  .table-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    background-color: #ffecd7;
+    padding: 30px;
+    border-radius: 15px;
+  }
+  
+  .nutrition-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-weight: 500;
+    font-size: 28px;
+  }
+  
+  .nutrition-table th,
+  .nutrition-table td {
+    padding: 14px;
+    border-bottom: 2px solid #000;
+    text-align: left;
+  }
+
+  .nutrition-table td:nth-child(2),
+.nutrition-table th:nth-child(2) {
+  text-align: right;
+}
+
+  
+  .nutrition-table th {
+    font-weight: 700;
+    font-size: 32px;
+  }
+  
+  .sub-item td {
+    padding-left: 40px;
+  }
+  
+  .note td {
+    border-bottom: none;
+    padding-top: 30px;
+    font-size: 28px;
+  }
+  
+
+
+  /* Footer Styling */
+footer {
+    display:flex;
+    width:80%;
+    margin:auto;
+    margin-top: 70px;
+  justify-content: space-between;
+  }
+  
+  .column {
+    max-width: 450px;
+    
+  }
+  
+  p.columnContent{
+  font-size: 16px;
+  font-weight: 500;
+  }
+  
+  .column a {
+    text-decoration: none;
+    color: black;
+  }
+  .footerMedia{
+    display:flex;
+    width:80%;
+    margin:auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    justify-content: space-between;
+  }
+  .leftContent span {
+    font-size: 18px;
+    font-weight: 300;
+    padding-left: 10px;
+  }
+  
+  .rightContent img {
+  width:250px;
+  }
+  .leftContent img {
+  width:20px;
+  height:20px;
+  margin-top: 10px;
+  }
+  
+  @media (min-width: 320px) and (max-width: 767px) {
+    .navbar {
+      flex-direction: column;
+      padding: 1rem;
+    }
+  
+    .logo {
+      padding-left: 0;
+      text-align: center;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      padding-right: 0;
+      gap: 1rem;
+      align-items: center;
+    }
+  
+    .menu-toggle {
+      display: block;
+      position: absolute;
+      top: 2.8rem;
+      right: 0.5rem;
+    }
+  
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      background-color: #fff;
+      width: 100%;
+      /* position: absolute;
+      top: 60px;
+      left: 0; */
+      padding: 1rem;
+      border-top: 1px solid #ccc;
+      z-index: 1000;
+    }
+
+    .nav-links li a {
+      font-size: 1rem;
+  }
+  .nav-links.show {
+    display: flex;
+  }
+  .chili-container {
+    padding-left: 0;
+    /* margin-left: 5px; */
+  }  
+  .img-container {
+    margin-left: 45px;
+    margin-top: 70px;
+  }
+  .img-container img{
+    height:71%;
+  }
+  .chili-container h1 {
+    font-size: 16px;
+  }
+
+  .content-container {
+    margin-top: 50px;
+}
+
+.content-container p {
+  font-size: 17px;
+  font-weight: 700;
+}
+li {
+  font-size: 17px;
+}
+.nutrition-table {
+  font-size: 17px;
+}
+
+.nutrition-table th {
+  font-size: 18px;
+}
+
+.note td {
+  font-size: 17px;
+}
+
+    footer {
+      flex-direction: column;
+      gap: 0px;
+      width: 90%;
+      align-items: flex-start;
+      margin-top: 45px;
+    }
+  
+    .footerMedia {
+      flex-direction: column;
+      gap: 20px;
+      width: 90%;
+      align-items: flex-start;
+    }
+    .leftContent span {
+      font-size: 16px;
+  }
+    .rightContent img {
+      width: 200px;
+    }
+  
+    .leftContent img {
+      margin-top: 0;
+    }
+  
+  
+  }  
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+  
+    .logo {
+      font-size: 14px;
+      padding-left: 0;
+  }
+    .navbar {
+      flex-direction: row;
+      padding: 1rem;
+    }
+  
+    .nav-links {
+      gap: 1rem;
+      padding-right: 2rem;
+    }
+    .nav-links li a {
+      font-size: 1rem;
+  }
+.img-container {
+  margin-left: 75px;
+}
+.content-container p {
+  font-size: 22px;
+}
+li {
+  font-size: 20px;
+}
+footer, .footerMedia {
+  width: 90%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.rightContent img {
+  width: 220px;
+}
+}
+
+
+@media (min-width: 1024px) and (max-width: 1300px) {
+  .navbar {
+    padding: 1rem 3rem;
+  }
+
+  .logo {
+    font-size: 1rem;
+  }
+
+  .nav-links {
+    gap: 1.5rem;
+  }
+  .nav-links li a {
+    font-size: 1.1rem;
+}
+
+footer {
+  justify-content: space-around;
+}
+
+.footerMedia {
+  justify-content: space-around;
+}
+.column {
+  max-width: 390px;
+}
+}

@@ -1,0 +1,633 @@
+body {
+    font-family: 'Raleway', sans-serif;
+  }
+  header{
+      background-color: #eeffe5;
+      padding:1px;
+      text-align: center;
+  }
+  .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+    .logo {
+      font-family: 'Inknut Antiqua', serif;
+      color: #2E8756;
+      font-size: 1.2rem;
+      font-weight: bolder;
+      padding-left: 5rem;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1.8rem;
+      padding-right: 4rem;
+    }
+    .nav-links li a {
+      color: black;
+      text-decoration: none;
+      font-size: 1.3rem;
+      font-weight:700;
+    }
+    .nav-links li a:hover {
+      color: #2E8756; 
+      text-decoration: underline;
+      text-underline-offset: 8px;
+  
+    }
+    .nav-links li a.active-link {
+        color: #2E8756;
+        text-decoration: underline;
+        text-underline-offset: 8px;
+      }
+      
+  /* Default: hide toggle button on large screens */
+  .menu-toggle {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #2E7D32;
+    cursor: pointer;
+  }
+
+.name {
+    text-align: center;
+}
+
+/* === GLOBAL RESETS & FONTS === */
+body {
+  /* margin: 0; */
+  font-family: "Raleway", sans-serif;
+  /* background-color: #f9f9f9; */
+}
+
+/* h1, h2 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+} */
+h2.main-heading {
+  font-weight: 500;
+font-size: 30px;
+}
+h2.heading {
+  font-weight: 600;
+font-size: 30px;
+}
+.facts {
+  background-color: #eeffe5cc; /* 'cc' = 80% opacity in hex */
+font-size: 17px;
+display: inline-block;
+margin-left: 150px;
+margin-bottom: 20px;
+font-weight: 500;
+
+}
+.facts p {
+  margin: 10px;
+}
+.quiz-step h1 {
+  text-align: center;
+  font-size: 30px;
+}
+.quiz-step h2 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+button {
+  font-family: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  padding: 10px 30px;
+  background-color: #f65035;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin: auto;
+  /* margin-left: 40px; */
+  font-size: 22px;
+}
+
+/* button:hover {
+  background-color: #256428;
+} */
+
+/* === QUIZ CONTAINER === */
+#quiz-container {
+  max-width: 900px;
+  margin: 150px auto;
+  padding: 0 20px;
+  position: relative;
+  z-index: 1;
+}
+
+/* === QUIZ STEP STYLING === */
+.quiz-step {
+  background: white;
+  border-radius: 16px;
+  padding: 40px 30px;
+  margin-top: -100px;
+  /* box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08); */
+  position: relative;
+  z-index: 2;
+  height: 500px;
+
+}
+
+/* === NAME STEP === */
+#name-step input {
+  width: 70%;
+  padding: 12px 16px;
+  border: 2px solid #666464;
+  /* border-radius: 8px; */
+  font-size: 16px;
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+/* === OPTIONS LAYOUT === */
+.options-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.option {
+  border: 2px solid #7a7878;
+  /* border-radius: 12px; */
+  padding: 16px 20px;
+  text-align: center;
+  background-color: white;
+  color: black;
+  font-weight: 500;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.option.selected {
+  background-color: #2E7D32;
+  color: white;
+  border-color: #2E7D32;
+}
+
+/* === FOOD GROUP SELECTIONS === */
+.food-group-options {
+  display: flex;
+  /* gap: 10px; */
+  justify-content: space-around;
+  margin: auto;
+  margin-bottom: 20px;
+
+  flex-wrap: wrap;
+width: 600px;
+}
+
+.food-option {
+  /* flex: 1 1 30%; */
+  min-width: 150px;
+  max-width: 150px;
+  text-align: center;
+  padding: 20px 0px;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.food-option.selected {
+  background-color: #2E7D32;
+  color: white;
+  border-color: #2E7D32;
+}
+
+.food-option img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.food-label {
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.food-frequency {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* === BACK BUTTON === */
+.previous-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-weight: 500;
+  background: none;
+  color: black;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+
+.previous-button:hover {
+  text-decoration: underline;
+}
+
+/* === METER STYLES (RESULT STEP PLACEHOLDER) === */
+/* #result-meter {
+  width: 100%;
+  height: 300px;
+  background-color: #eef3ec;
+  border-radius: 50%;
+  position: relative;
+  margin-top: 30px;
+} */
+
+
+.result-container {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+}
+
+.result-header {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.meter-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.meter-arc {
+  width: 100%;
+  height: 200px;
+  border-top: 8px solid #14ae5c;
+  border-radius: 200px 200px 0 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.meter-pointer {
+  position: absolute;
+  width: 4px;
+  height: 110px;
+  background-color: #14ae5c;
+  bottom: 0;
+  left: 50%;
+  transform-origin: bottom center;
+  transition: transform 1s ease;
+}
+
+.meter-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 0 10px;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+}
+
+.result-score-text {
+  font-size: 28px;
+  font-weight: 800;
+  margin-top: 30px;
+  color: green;
+  font-family: 'Inknut Antiqua', serif;
+}
+
+
+.gauge-container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin: 2rem auto;
+  margin-bottom: 50px;
+}
+
+.gauge {
+  width: 100%;
+  height: auto;
+}
+.labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  font-weight: bold;
+  position:relative;
+
+}
+
+/* Add this to your existing CSS */
+#gauge-pointer {
+fill: #f65035; /* Matches your button color */
+stroke: white;
+stroke-width: 2;
+transition: all 1s ease-out;
+transform-origin: center center;
+}
+.result-container h2 {
+margin-bottom: 50px;
+}
+
+.beginner {
+position:relative;
+}
+.rookie {
+position:absolute;
+bottom:950%;
+
+}
+.pro {
+position:absolute;
+bottom:1350%;
+left:45%;
+}
+.star {
+position:absolute;
+bottom:1000%;
+right:0%;
+}
+.farmer {
+position:relative;
+
+}
+
+
+  /* Footer Styling */
+  footer {
+    display:flex;
+    width:80%;
+    margin:auto;
+    margin-top: 70px;
+  justify-content: space-between;
+  }
+  
+  .column {
+    max-width: 450px;
+  }
+  
+  p.columnContent{
+  font-size: 16px;
+  font-weight: 500;
+  }
+  
+  .column a {
+    text-decoration: none;
+    color: black;
+  }
+  .footerMedia{
+    display:flex;
+    width:80%;
+    margin:auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    justify-content: space-between;
+  }
+  .leftContent span {
+    font-size: 18px;
+    font-weight: 300;
+    padding-left: 10px;
+  }
+  
+  .rightContent img {
+  width:250px;
+  }
+  .leftContent img {
+  width:20px;
+  height:20px;
+  margin-top: 10px;
+  }
+  
+  @media (min-width: 320px) and (max-width: 767px) {
+    .navbar {
+      flex-direction: column;
+      padding: 1rem;
+    }
+  
+    .logo {
+      padding-left: 0;
+      text-align: center;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      padding-right: 0;
+      gap: 1rem;
+      align-items: center;
+    }
+  
+    .menu-toggle {
+      display: block;
+      position: absolute;
+      top: 2.8rem;
+      right: 0.5rem;
+    }
+  
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      background-color: #fff;
+      width: 100%;
+      /* position: absolute;
+      top: 60px;
+      left: 0; */
+      padding: 1rem;
+      border-top: 1px solid #ccc;
+      z-index: 1000;
+    }
+
+    .nav-links li a {
+      font-size: 1rem;
+  }
+  .nav-links.show {
+    display: flex;
+  }
+
+  .quiz-step {
+    padding: 0px;
+    margin-top: -135px;
+    max-height: 500px;
+}
+    /* .options-container {
+      grid-template-columns: 1fr;
+    } */
+    .option {
+      border: 2px solid #7a7878;
+      padding: 3px 0px;
+      text-align: center;
+      background-color: white;
+      color: black;
+      font-weight: 500;
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-align: center;
+  }
+  .quiz-step h1 {
+    font-size: 16px;
+}
+  .quiz-step h2 {
+    font-size: 21px;
+    margin-top: 0;
+}
+.facts {
+  font-size: 12px;
+  margin-left: 0;
+  margin-bottom: 23px;
+}
+    .food-group-options {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px; 
+     width: 288px;
+
+    }
+    .food-option {
+      width: 100%;
+    }
+  
+    .previous-button {
+  display: none;
+  }
+  .rookie {
+    bottom: 566%;
+    left: -13%;
+}
+.pro {
+  bottom: 806%;
+}
+.star {
+  bottom: 553%;
+  right: -16%;
+}
+    footer {
+      flex-direction: column;
+      gap: 0px;
+      width: 90%;
+      align-items: flex-start;
+      margin-top: 5px;
+    }
+  
+    .footerMedia {
+      flex-direction: column;
+      gap: 20px;
+      width: 90%;
+      align-items: flex-start;
+    }
+    .leftContent span {
+      font-size: 16px;
+  }
+    .rightContent img {
+      width: 200px;
+    }
+  
+    .leftContent img {
+      margin-top: 0;
+    }
+  
+  }  
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+  
+    .logo {
+      font-size: 14px;
+      padding-left: 0;
+  }
+    .navbar {
+      flex-direction: row;
+      padding: 1rem;
+    }
+  
+    .nav-links {
+      gap: 1rem;
+      padding-right: 2rem;
+    }
+    .nav-links li a {
+      font-size: 1rem;
+  }
+  .facts {
+    margin-left: 42px;
+}
+#quiz-container {
+  margin-bottom: 0;
+}
+.result-container h2 {
+  margin-bottom: 27px;
+}
+.food-option {
+  flex: 1 1 45%;
+}
+
+footer, .footerMedia {
+  width: 90%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.rightContent img {
+  width: 220px;
+}
+}
+
+
+@media (min-width: 1024px) and (max-width: 1300px) {
+  .navbar {
+    padding: 1rem 3rem;
+  }
+
+  .logo {
+    font-size: 1rem;
+  }
+
+  .nav-links {
+    gap: 1.5rem;
+  }
+  .nav-links li a {
+    font-size: 1.1rem;
+}
+.food-option {
+  flex: 1 1 30%;
+}
+
+footer {
+  justify-content: space-around;
+}
+
+.footerMedia {
+  justify-content: space-around;
+}
+.column {
+  max-width: 390px;
+}
+}
+
+
+
+
+    

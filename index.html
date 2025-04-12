@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalized Diet & Nutrition Planner Website</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@700&family=Raleway:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <h5>ONE STOP FOR NUTRITION PLAN AND PERSONALIZED DIET CHART!!!</h5>
+    </header>
+
+    <nav class="navbar">
+        <div class="logo">EAT HEALTHY +</div>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./eatHealthy.html">Eat Healthy</a></li>
+            <li><a href="./resources.html">Resources</a></li>
+            <li><a href="./mealPlan.html">Meal Plan</a></li>
+            <li class="register"><a href="#" id="openRegister">REGISTER</a></li>
+        </ul>
+    </nav>
+
+ <!-- First Modal -->
+ <div class="modal" id="registerModal">
+    <div class="modal-content">
+      <h2>Register to continue<br>
+      Eat Health +</h2>
+      <input type="text" id="fullName" placeholder="Full name" required>
+
+      <input type="email" id="email" placeholder="Email address" required>
+
+      <button id="continueWithMail">Continue with mail</button>
+      <p class="error-message" style="color:red; display:none;"></p>
+    </div>
+  </div>
+
+  <!-- Second Modal -->
+  <div class="modal" id="otpModal">
+    <div class="modal-content">
+      <h2>Check your mail <br>
+       for 6-digit PIN</h2>
+      <input type="text" id="pinInput" maxlength="6" placeholder="XXXXXX" required pattern="\d{6}">
+      <button id="registerBtn">Register</button>
+      <p class="error-message" style="color:red; display:none;"></p>
+      <p class="success-message" id="successMessage" style="display:none;">Registered successfully!</p>
+    </div>
+  </div>
+
+
+
+    <section class="bannerContainer">
+        <div class="bannerImg">
+            <img src="./assets/images/hero-home screen.png">
+        </div>
+        <div class="bannerContent">
+            <div class="eatHealthyContent">
+                <h2>EAT HEALTHY +</h2>
+                <h4>Your essential guide to healthy eating</h4>
+                <p>Our vision is for a future where everyone has a healthy, sustainable diet.</p>
+                <p>Ultimately, we want to change the food environment and motivate people to adopt healthy,</p>
+                <p>sustainable diets - for life.</p>
+
+                <a href="./aboutUs.html" class="moreAboutUs">MORE ABOUT US</a>
+            </div>
+            <div class="iconContainer">
+                <div class="iconItem">
+                    <img src="./assets/images/healthyIcon1.png">
+                    <p>Perfect Meal Plan</p>
+                </div>
+                <div class="iconItem">
+                    <img src="./assets/images/healthyIcon2.png">
+                    <p>Nutrition Plan</p>
+                </div>
+                <div class="iconItem">
+                    <img src="./assets/images/healthyIcon3.png">
+                    <p>Free Sample Brochures</p>
+                </div>
+                <div class="iconItem">
+                    <img src="./assets/images/healthyIcon4.png">
+                    <p>Personalized <br>Diet Chart</p>
+                </div>
+                <div class="iconItem">
+                    <img src="./assets/images/healthyIcon5.png">
+                    <p>30 - days Challenge</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="feedSection">
+        <h2 class="feedHeading">OUR FEED FOR YOU</h2>
+        <div class="feedContainer">
+            <div class="leftImage imageBox">
+                <img src="./assets/images/feed1.png" alt="Left Feed">
+                <p class="imageLabel">Nutrition Information for Families</p>
+            </div>
+            <div class="rightImages">
+                <div class="imageBox">
+                    <img src="./assets/images/feed2.png" alt="Top Right Feed">
+                    <p class="imageLabel">Receipe of the Week</p>
+                </div>
+                <div class="imageBox">
+                    <img src="./assets/images/feed3.png" alt="Bottom Right Feed">
+                    <p class="imageLabel">Get Your MEAL PLAN PDF</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="featuredContainer">
+        <div class="featHeading">
+            <h1>FEATURED IN</h1>
+        </div>
+        <div class="featIconContainer">
+            <img src="./assets/images/FeaturedLogo1.png">
+            <img src="./assets/images/FeaturedLogo2.png">
+            <img src="./assets/images/healthy chew logo final.png">
+            <img src="./assets/images/FeaturedLogo4.png">
+            <img src="./assets/images/FeaturedLogo5.png">
+            <img src="./assets/images/FeaturedLogo6.png">
+            <img src="./assets/images/FeaturedLogo7.png">
+
+        </div>
+
+    </section>
+
+    <section class="challengeContainer">
+        <div class="challengImg">
+            <img src="./assets/images/ChallengeBanner.png">
+        </div>
+        <div class="challengeContent">
+            <h1>JOIN THE 30-DAY</h1>
+            <h1>CHALLENGE</h1>
+            <p>Our 30-Day Challenge is a fun and effective way to kick-start your journey towards better health. This
+                program is designed to help you build lasting habits and see noticeable improvements in just one month!
+            </p>
+            <button class="download"><a href="./paymentPage.html">DOWNLOAD THE CHALLENGE PDF</a></button>
+        </div>
+
+    </section>
+
+    <section class="testimonialsContainer">
+        <div class="testHeading">
+            <h1>TESTIMONIALS</h1>
+            <h2 style="font-weight: 500;">Hear from our valuable customers who have transformed their health with EAT
+                HEALTHY +</h2>
+
+        </div>
+        <!-- <div class="testReviewContainer"></div> -->
+
+    </section>
+
+
+
+
+    <div class="review-container">
+        <div class="review-box show-original" id="box0">
+            <img src="./assets/images/Testimonials1.png" alt="Review 1">
+            <div class="review-content">
+                <div class="original-content">
+                    <p>"I've learned so much about nutrition from this website! It has changed my perspective on eating
+                        and helped me make healthier choices. I feel more energetic and my digestive issues have
+                        improved."</p>
+                    <p style="color: #055a2b;"> WILSON D</p>
+                </div>
+                <div class="alternate-content">
+                    <p>"Before, I was lost in the world of food feeling confused and ovewhelmed.After using this
+                        website, I feel empowered & created a sustainable healthy lifestyle that I love."</p>
+                    <p style="color: #055a2b;"> WILSON D</p>
+                </div>
+            </div>
+        </div>
+        <div class="review-box show-original" id="box1">
+            <img src="./assets/images/Testimonials2.png" alt="Review 2">
+            <div class="review-content">
+                <div class="original-content">
+                    <p>"I've learned so much about nutrition from this website! It has changed my perspective on eating
+                        and helped me make healthier choices. I feel more energetic and my digestive issues have
+                        improved."</p>
+                    <p style="color: #055a2b;"> MARIA NELSONN</p>
+                </div>
+                <div class="alternate-content">
+                    <p>"Before, I was lost in the world of food feeling confused and ovewhelmed.After using this
+                        website, I feel empowered & created a sustainable healthy lifestyle that I love."</p>
+                    <p style="color: #055a2b;"> MARIA NELSONN</p>
+                </div>
+            </div>
+        </div>
+        <div class="review-box show-original" id="box2">
+            <img src="./assets/images/Testimonials3.png" alt="Review 3">
+            <div class="review-content">
+                <div class="original-content">
+                    <p>"I've learned so much about nutrition from this website! It has changed my perspective on eating
+                        and helped me make healthier choices. I feel more energetic and my digestive issues have
+                        improved."</p>
+                    <p style="color: #055a2b;"> JERALD JOHN</p>
+                </div>
+                <div class="alternate-content">
+                    <p>"Before, I was lost in the world of food feeling confused and ovewhelmed.After using this
+                        website, I feel empowered & created a sustainable healthy lifestyle that I love."</p>
+                    <p style="color: #055a2b;"> JERALD JOHN</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <div class="column">
+            <h2>EAT HEALTHY +</h2>
+            <p class="columnContent">Eat Healthy + is a comprehensive platform, which gives an essential guide to healthy eating.</p>
+            <h3 style="font-weight: 600;margin-bottom: 5px;"><a href="./terms&Conditions.html">Terms & Conditions</a></h3>
+            <h3 style="font-weight: 600;margin-top: 10px;"><a href="./privacyPolicy.html">Privacy Policy</a></h3>
+        </div>
+        <div class="column">
+            <h2>Quick Links:</h2>
+            <h3 style="font-weight: 500;margin-bottom: 5px;"><a href="./aboutUs.html">About Us</a></h3>
+            <h3 style="font-weight: 500;margin-top: 5px;"><a href="./advertising.html">Advertising Policy</a></h3>
+            <h2>Contact Us:</h2>
+            <p style="margin: 0;">Phone: +91 9876541230</p>
+            <p style="margin: 0;">Email: info@eathealth.com</p>
+        </div>
+        <div class="column">
+            <h3 style="margin-bottom: 7px;font-weight: 600;"><a href="./nutrition.html">Nutrition Guidelines</a></h3>
+            <h3 style="margin: 5px auto;font-weight: 600;"><a href="./news.html">News</a></h3>
+            <h3 style="margin-top: 10px;font-weight: 600;"><a href="./diversity.html">Diversity & Inclusion</a></h3>
+        </div>
+    </footer>
+        <div class="footerMedia">
+            <div class="leftContent">
+                <img src="./assets/images/Copyright.png">
+                <span>Eat Healthy +. All Right Reserved</span>
+            </div>
+            <div class="rightContent">
+                <img src="./assets/images/social links-footer.png">
+            </div>
+        </div>
+    
+
+
+
+<script src="./assets/js/toggle.js"></script>
+<script src="./assets/js/testimonialReview.js"></script>
+<script src="./assets/js/register.js"></script>
+</body>
+
+</html>

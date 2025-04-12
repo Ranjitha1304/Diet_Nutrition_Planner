@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/protein.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@700&family=Raleway:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h5>ONE STOP FOR NUTRITION PLAN AND PERSONALIZED DIET CHART!!!</h5>
+    </header>
+
+    <nav class="navbar">
+        <div class="logo">EAT HEALTHY +</div>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./eatHealthy.html" class="active-link">Eat Healthy</a></li>
+            <li><a href="./resources.html">Resources</a></li>
+            <li><a href="./mealPlan.html">Meal Plan</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Fruit Banner Section -->
+    <section class="fruit-banner">
+        <div class="fruit-banner-inner">
+            <img src="./assets/images/protein-hero.png" alt="Fruits" class="fruit-image">
+            <div class="fruit-label">PROTEIN</div>
+        </div>
+    </section>
+
+    <div class="fruit-group">
+        <h1>What foods are in the Protein Group?</h1>
+        <h2 style="font-weight: 500;">The Fruit Group includes all fruits and 100% fruit juice. Fruits
+            may be fresh, frozen, canned or dried/dehydrated. Fruits can be eaten whole, cut up, pureed (mashed), or
+            cooked. At least half of the recommended amount of fruit eaten should come from whole fruit, rather than
+            100% fruit juice.
+        </h2>
+    </div>
+<div class="fruit-limit">
+    <div class="fruit-img">
+        <img src="./assets/images/protein 1.png">
+    </div>
+    <div class="fruit-content">
+
+        <h2>How much fruit should I eat each day?
+        </h2>
+        <p>Your fruit needs depend on your age, sex, height, weight, and physical activity. This amount can also depend
+            on whether you are pregnant or breastfeeding. <br> Find the right amount for you by getting your EAT HEALTHY
+            + <br>
+            For general guidance by age, see the table below.</p>
+
+        <h2>What counts as a cup of fruit?
+        </h2>
+        <p>In general, the following counts as 1 cup from the Fruit Group:</p>
+        <ul>
+            <li>
+                1 Cup of fresh, frozen, or canned fruit</li>
+            <li> 1/2 cup of dried fruit</li>
+            <li>1 cup of 100% fruit juice</li>
+        </ul>
+        <p> The table below shows amounts that count as 1 cup from the Fruit Group.
+        </p>
+    </div>
+</div>
+
+<div class="table-container">
+
+<h1>More About the Fruit Group</h1>
+<p class="subtext">The table below shows amounts that count as 1 cup from the Fruit Group.</p>
+
+<button class="accordion" id="toggleTableBtn">
+  Daily Fruit Table
+  <img src="./assets/images/drop down collapsed icon.png" class="icon">
+</button>
+
+<div class="panel" id="fruitTablePanel">
+  <p>*These are general recommendations by age. Find the right amount for you by getting your EAT HEALTHY+</p>
+  <table>
+    <thead>
+      <tr>
+        <th colspan="3">Daily Recommendation*</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td style="font-weight: 600;">Toddlers</td><td>12 to 23 months</td><td>1/2 to 1 cup</td></tr>
+      <tr><td rowspan="2" style="font-weight: 600;">Children</td><td>2–3 yrs</td><td>1 to 1 1/2 cup</td></tr>
+      <tr><td>4–8 yrs</td><td>1 to 1 1/2 cup</td></tr>
+      <tr><td rowspan="2" style="font-weight: 600;">Girls</td><td>9–13 yrs</td><td>1 to 2 cups</td></tr>
+      <tr><td>14–18 yrs</td><td>1 to 2 cups</td></tr>
+      <tr><td rowspan="2" style="font-weight: 600;">Boys</td><td>9–13 yrs</td><td>1 to 2 cups</td></tr>
+      <tr><td>14–18 yrs</td><td>1 to 2 cups</td></tr>
+      <tr><td rowspan="3" style="font-weight: 600;">Women</td><td>19–30 yrs</td><td>2 to 2 1/2 cups</td></tr>
+      <tr><td>31–59 yrs</td><td>2 to 2 1/2 cups</td></tr>
+      <tr><td>60+ yrs</td><td>2 cups</td></tr>
+      <tr><td rowspan="3" style="font-weight: 600;">Men</td><td>19–30 yrs</td><td>2 to 2 1/2 cups</td></tr>
+      <tr><td>31–59 yrs</td><td>2 to 2 1/2 cups</td></tr>
+      <tr><td>60+ yrs</td><td>2 cups</td></tr>
+    </tbody>
+  </table>
+</div>
+
+</div>
+
+
+<!-- NUTRIENTS SECTION -->
+<section class="nutrients-section">
+    <div class="nutrients-container">
+      <!-- Left Side -->
+      <div class="nutrients-left">
+        <h2>Why it is important to eat fruit?</h2>
+        <p>Eating fruit has many health benefits. People who eat fruits and vegetables as part of an overall diet may lower their risk for certain diseases. Fruits provide nutrients needed to  maintain your health and body.</p>
+  
+        <!-- Nutrient Box -->
+        <div class="nutrient-box">
+          <div class="nutrient-header">
+            <h3>Nutrients</h3>
+            <div class="icons">
+              <img src="./assets/images/swipe left icon.png" onclick="prevSlide()" alt="left" />
+              <img src="./assets/images/swipe right icon.png" onclick="nextSlide()" alt="right" />
+            </div>
+          </div>
+  
+          <div class="nutrient-slide-content">
+            <h4 id="nutrient-title"> </h4>
+            <p id="nutrient-description">Most fruits are low in fat, sodium and calories. Fruits do not have cholesterol.</p>
+          </div>
+  
+          <div class="nutrient-dots">
+            <span class="dot active" onclick="goToSlide(0)"></span>
+            <span class="dot" onclick="goToSlide(1)"></span>
+            <span class="dot" onclick="goToSlide(2)"></span>
+            <span class="dot" onclick="goToSlide(3)"></span>
+            <span class="dot" onclick="goToSlide(4)"></span>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Right Side -->
+      <div class="nutrients-right">
+        <img src="./assets/images/protein 2.png" alt="fruits" />
+      </div>
+    </div>
+  </section>
+    
+
+    <footer>
+        <div class="column">
+            <h2>EAT HEALTHY +</h2>
+            <p class="columnContent">Eat Healthy + is a comprehensive platform, which gives an essential guide to
+                healthy eating.</p>
+            <h3 style="font-weight: 600;margin-bottom: 5px;"><a href="./terms&Conditions.html">Terms & Conditions</a>
+            </h3>
+            <h3 style="font-weight: 600;margin-top: 10px;"><a href="./privacyPolicy.html">Privacy Policy</a></h3>
+        </div>
+        <div class="column">
+            <h2>Quick Links:</h2>
+            <h3 style="font-weight: 500;margin-bottom: 5px;"><a href="./aboutUs.html">About Us</a></h3>
+            <h3 style="font-weight: 500;margin-top: 5px;"><a href="./advertising.html">Advertising Policy</a></h3>
+            <h2>Contact Us:</h2>
+            <p style="margin: 0;">Phone: +91 9876541230</p>
+            <p style="margin: 0;">Email: info@eathealth.com</p>
+        </div>
+        <div class="column">
+            <h3 style="margin-bottom: 7px;font-weight: 600;"><a href="./nutrition.html">Nutrition Guidelines</a></h3>
+            <h3 style="margin: 5px auto;font-weight: 600;"><a href="./news.html">News</a></h3>
+            <h3 style="margin-top: 10px;font-weight: 600;"><a href="./diversity.html">Diversity & Inclusion</a></h3>
+        </div>
+    </footer>
+    <div class="footerMedia">
+        <div class="leftContent">
+            <img src="./assets/images/Copyright.png">
+            <span>Eat Healthy +. All Right Reserved</span>
+        </div>
+        <div class="rightContent">
+            <img src="./assets/images/social links-footer.png">
+        </div>
+    </div>
+      
+
+    <script src="./assets/js/toggle.js"></script>
+    <script src="./assets/js/tableGroup.js"></script>
+    <script src="./assets/js/nutrientCarousel.js"></script>
+
+</body>
+
+</html>
